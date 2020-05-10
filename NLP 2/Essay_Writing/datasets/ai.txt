@@ -1,0 +1,195 @@
+IN THE MONTHS since the novel coronavirus emerged in Wuhan, China, last December, almost 2,000 research papers have been published on the health effects of the new virus, possible treatments, and the dynamics of the resulting pandemic.
+
+This outpouring of research is a testament to the speed with which science can tackle big problems. But it also presents a headache for anyone wanting to stay up to date with the literature, or hoping to mine it for insight about the virus, its behavior, or possible treatments.
+
+Naturally, some believe that artificial intelligence may help. Monday, the White House announced a project in collaboration with tech companies and academics to make a huge amount of coronavirus research accessible to AI researchers and their algorithms for the first time.
+
+The effort will ask AI to mine through the avalanche of research to answer questions that could help medical and public health experts. By cross-referencing papers and searching for patterns, AI algorithms might help discover new possible treatments or factors that make the virus worse for some patients.
+
+Machine learning has huge potential to help wrangle and draw insights from scientific research. But some experts say the approach is at an early stage and is unlikely to help address the current crisis, where the US suffers from more basic needs, like a shortage of test kits.
+
+Microsoft Research, the National Library of Medicine, and the Allen Institute for AI (AI2), gathered and prepared over 29,000 papers related to the new virus and the wider coronavirus family, 13,000 of them processed so that computers can read the underlying data, plus information about the authors and their affiliations. Kaggle, a platform that runs data science competitions, is creating challenges around 10 key questions related to the coronavirus. These range from questions about risk factors and treatments that do not involve drugs, to the genetic properties of the virus and efforts to develop vaccines. The project also involves the Chan Zuckerberg Initiative and the Center for Security and Emerging Technology at Georgetown University.
+
+Illustrated woman, speech bubble, virus cell
+What Is the Coronavirus?
+Plus: How can I avoid catching it? Is Covid-19 more deadly than the flu? Our in-house Know-It-Alls answer your questions.
+BY SARA HARRISON
+
+“I think the initiative is definitely worthwhile,” says Giovanni Colavizza, an assistant professor at the University of Amsterdam and a visiting researcher at the Alan Turing Institute. “Whether interesting findings will come from these initiatives remains to be seen, but this initiative highlights the importance of structured, open, and programmatic access to the scientific literature.”
+
+Mining scientific papers has sometimes proven useful, finding, for example, connections that suggested magnesium might treat migraines. The hope is that AI will accelerate insights into the novel coronavirus by finding more subtle connections across more data.
+
+Support our journalism.
+The news you need to know on Covid-19 and beyond.
+Subscribe Now
+Despite an occasionally frosty relationship with big tech, the White House has been meeting with tech executives in an effort to find solutions to the coronavirus crisis. “High tech in general has gotten something of a bad rap, but something like this crisis shows how AI can potentially do a world of good,” says Oren Etzioni, CEO of AI2. “The scientific literature on the coronavirus is growing exponentially.”
+
+John Brownstein, an expert on health bioinformatics at Harvard Medical School, says the effort is worthwhile, and it is good to see so many people trying to help. At the same time, he notes that worthwhile data projects such as Predict, which is designed to predict pandemics, have been starved of funding in recent years. He also says the government should have been prepared in advance for pandemics, citing a lack of testing kits as a big problem. “We’ve had a severe lack of funding and resources,” Brownstein says. “We want to think about the bigger picture.”
+
+Keep Reading
+illustration of a head
+The latest on artificial intelligence, from machine learning to computer vision and more
+After the US and other governments last week called for scientific publishers to open up research on the coronavirus, a number of big publishers said they would offer free access to relevant papers and data. Many scientists support the idea of making research more open and accessible generally.
+
+Most Popular
+temperature controlled mug 
+GEAR
+18 Last-Minute Mother's Day Gifts on Sale Now
+
+LOURYN STRAMPE
+
+a needle puncturing skin material
+SCIENCE
+Front-Runners Emerge in the Race for a Covid-19 Vaccine
+
+MEGAN MOLTENI
+
+Europa surface
+PHOTO
+Space Photos of the Week: Europa! Attempt No Landing There
+
+SHANNON STIRONE
+
+screen still from animal crossing game 
+GEAR
+22 Animal Crossing Tips to Up Your Island Game
+
+LOURYN STRAMPE
+
+“Anything that will expedite a systematic review of the literature surrounding Covid is useful,” says Suzanne Fricke, a librarian at Washington State University who has studied data mining of scientific literature. “Rapid review with AI is needed to develop guidelines for practitioners and to identify gaps in knowledge,” she says. Fricke adds that there are significant delays with peer-reviewed research papers. She adds that mining raw data from doctors on the front line could conceivably provide even more insights. That’s not immediately part of the new initiative.
+
+For some AI researchers, the new project is an opportunity to feel useful. Kristian Lum, an assistant research professor at the University of Pennsylvania, recently posted on Twitter offering to help apply her statistical modelling skills to projects related to the virus. “I'll definitely have a look and see if my skills are useful here,” she says.
+
+HERE’S A TROUBLING fact. A self-driving car hurtling along the highway and weaving through traffic has less understanding of what might cause an accident than a child who’s just learning to walk.
+
+A new experiment shows how difficult it is for even the best artificial intelligence systems to grasp rudimentary physics and cause and effect. It also offers a path for building AI systems that can learn why things happen.
+
+The experiment was designed “to push beyond just pattern recognition,” says Josh Tenenbaum, a professor at MIT’s Center for Brains Minds & Machines, who who worked on the project with Chuang Gan, a researcher at MIT, and Kexin Yi, a PhD student at Harvard. “Big tech companies would love to have systems that can do this kind of thing.”
+
+The most popular cutting-edge AI technique, deep learning, has delivered some stunning advances in recent years, fueling excitement about the potential of AI. It involves feeding a large approximation of a neural network copious amounts of training data. Deep-learning algorithms can often spot patterns in data beautifully, enabling impressive feats of image and voice recognition. But they lack other capabilities that are trivial for humans.
+
+To demonstrate the shortcoming, Tenenbaum and his collaborators built a kind of intelligence test for AI systems. It involves showing an AI program a simple virtual world filled with a few moving objects, together with questions and answers about the scene and what’s going on. The questions and answers are labeled, similar to how an AI system learns to recognize a cat by being shown hundreds of images labeled “cat.”
+
+Systems that use advanced machine learning exhibited a big blind spot. Asked a descriptive question such as “What color is this object?” a cutting-edge AI algorithm will get it right more than 90 percent of the time. But when posed more complex questions about the scene, such as “What caused the ball to collide with the cube?” or “What would have happened if the objects had not collided?” the same system answers correctly only about 10 percent of the time.
+
+article image
+The WIRED Guide to Artificial Intelligence
+Supersmart algorithms won't take all the jobs, But they are learning faster than ever, doing everything from medical diagnostics to serving up ads.
+BY TOM SIMONITE
+
+David Cox, IBM director of the MIT-IBM Watson AI Lab, which was involved with the work, says understanding causality is fundamentally important for AI. “We as humans have the ability to reason about cause and effect, and we need to have AI systems that can do the same.”
+
+A lack of causal understanding can have real consequences, too. Industrial robots can increasingly sense nearby objects, in order to grasp or move them. But they don't know that hitting something will cause it to fall over or break unless they’ve been specifically programmed—and it’s impossible to predict every possible scenario.
+
+Support our journalism.
+The news you need to know on Covid-19 and beyond.
+Subscribe Now
+If a robot could reason causally, however, it might be able to avoid problems it hasn’t been programmed to understand. The same is true for a self-driving car. It could instinctively know that if a truck were to swerve and hit a barrier, its load could spill onto the road.
+
+Causal reasoning would be useful for just about any AI system. Systems trained on medical information rather than 3-D scenes need to understand the cause of disease and the likely result of possible interventions. Causal reasoning is of growing interest to many prominent figures in AI. “All of this is driving towards AI systems that can not only learn but also reason,” Cox says.
+
+The test devised by Tenenbaum is important, says Kun Zhang, an assistant professor who works on causal inference and machine learning at Carnegie Mellon University, because it provides a good way to measure causal understanding, albeit in a very limited setting. “The development of more-general-purpose AI systems will greatly benefit from methods for causal inference and representation learning,” he says.
+
+Most Popular
+temperature controlled mug 
+GEAR
+18 Last-Minute Mother's Day Gifts on Sale Now
+
+LOURYN STRAMPE
+
+a needle puncturing skin material
+SCIENCE
+Front-Runners Emerge in the Race for a Covid-19 Vaccine
+
+MEGAN MOLTENI
+
+Europa surface
+PHOTO
+Space Photos of the Week: Europa! Attempt No Landing There
+
+SHANNON STIRONE
+
+screen still from animal crossing game 
+GEAR
+22 Animal Crossing Tips to Up Your Island Game
+
+LOURYN STRAMPE
+
+Besides showing weaknesses in existing AI programs, Tenenbaum and his colleagues built a new kind of AI system capable of learning about cause and effect that scores much higher on their intelligence test. Their approach combines several AI techniques. The system uses deep learning to recognize objects in a scene. The output of this is fed to software that builds a 3D model of the scene and how objects interact.
+
+Keep Reading
+illustration of a head
+The latest on artificial intelligence, from machine learning to computer vision and more
+The approach requires more hand-built components than many machine learning algorithms, and Tenenbaum cautions that it’s brittle and won’t scale well. But it seems to suggest that a mix of approaches—along with some new ideas—will be needed to take AI forward.
+
+“Our minds build causal models and use these models to answer arbitrary queries, while the best AI systems are far from emulating these capabilities,” says Brenden Lake, an assistant professor of psychology and data science at NYU.
+
+Samuel Gershman, an associate professor at Harvard who has collaborated with Tenenbaum on other projects, adds that approaching human intelligence will be impossible for machines without some grasp of causal reasoning. He points to a well-known medical fact—that women are less likely to die from increased alcohol use than men. “An AI system with no notion of causality might infer that the way to reduce mortality is to administer sex-change operations to men,” he says.
+ARTIFICIAL INTELLIGENCE HAS made big strides recently in understanding language, but it can still suffer from an alarming, and potentially dangerous, kind of algorithmic myopia.
+
+Research shows how AI programs that parse and analyze text can be confused and deceived by carefully crafted phrases. A sentence that seems straightforward to you or me may have a strange ability to deceive an AI algorithm.
+
+That’s a problem as text-mining AI programs increasingly are used to judge job applicants, assess medical claims, or process legal documents. Strategic changes to a handful of words could let fake news evade an AI detector; thwart AI algorithms that hunt for signs of insider trading; or trigger higher payouts from health insurance claims.
+
+“This kind of attack is very important,” says Di Jin, a graduate student at MIT who developed a technique for fooling text-based AI programs with researchers from the University of Hong Kong and Singapore’s Agency for Science, Technology, and Research. Jin says such “adversarial examples” could prove especially harmful if used to bamboozle automated systems in finance or health care: “Even a small change in these areas can cause a lot of troubles.”
+
+Jin and colleagues devised an algorithm called TextFooler capable of deceiving an AI system without changing the meaning of a piece of text. The algorithm uses AI to suggest which words should be converted into synonyms to fool a machine.
+
+To trick an algorithm designed to judge movie reviews, for example, TextFooler altered the sentence:
+
+“The characters, cast in impossibly contrived situations, are totally estranged from reality.”
+
+Support our journalism.
+The news you need to know on Covid-19 and beyond.
+Subscribe Now
+To read:
+
+“The characters, cast in impossibly engineered circumstances, are fully estranged from reality.”
+
+This caused the algorithm to classify the review as “positive,” instead of “negative.” The demonstration highlights an uncomfortable truth about AI—that it can be both remarkably clever and surprisingly dumb.
+
+Researchers tested their approach using several popular algorithms and data sets, and they were able to reduce an algorithm’s accuracy from above 90 percent to below 10 percent. The altered phrases were generally judged by people to have the same meaning.
+
+Machine learning works by finding subtle patterns in data, many of which are imperceptible to humans. This renders systems based on machine learning vulnerable to a strange kind of confusion. Image recognition programs, for instance, can be deceived by an image that looks perfectly normal to the human eye. Subtle tweaks to the pixels in an image of a helicopter, for instance, can trick a program into thinking it’s looking at a dog. The most deceptive tweaks can be identified through AI, using a process related to the one used to train an algorithm in the first place.
+
+Keep Reading
+illustration of a head
+The latest on artificial intelligence, from machine learning to computer vision and more
+Researchers are still exploring the extent of this weakness, along with the potential risks. Vulnerabilities have mostly been demonstrated in image and speech recognition systems. Using AI to outfox AI may have serious implications when algorithms are used to make critical decisions in computer security and military systems, as well as anywhere there’s an effort to deceive.
+
+A report published by the Stanford Institute for Human-Centered AI last week highlighted, among other things, the potential for adversarial examples to deceive AI algorithms, suggesting this could enable tax fraud.
+
+At the same time, AI programs have become a lot better at parsing and generating language, thanks to new machine-learning techniques and large quantities of training data. Last year, OpenAI demonstrated a tool called GPT-2 capable of generating convincing news stories after being trained on huge amounts of text slurped from the web. Other algorithms based on the same AI advances can summarize or determine the meaning of a piece of text more accurately than was previously possible.
+
+Most Popular
+temperature controlled mug 
+GEAR
+18 Last-Minute Mother's Day Gifts on Sale Now
+
+LOURYN STRAMPE
+
+a needle puncturing skin material
+SCIENCE
+Front-Runners Emerge in the Race for a Covid-19 Vaccine
+
+MEGAN MOLTENI
+
+Europa surface
+PHOTO
+Space Photos of the Week: Europa! Attempt No Landing There
+
+SHANNON STIRONE
+
+screen still from animal crossing game 
+GEAR
+22 Animal Crossing Tips to Up Your Island Game
+
+LOURYN STRAMPE
+
+Jin’s team’s method for tweaking text “is indeed really effective at generating good adversaries” for AI systems, says Sameer Singh, an assistant professor at the UC Irvine, who has done related research.
+
+Singh and colleagues have shown how a few seemingly random words can cause large language algorithms to misbehave in specific ways. These “triggers” can, for instance, cause OpenAI’s algorithm to respond to a prompt with racist text.
+
+But Singh says the approach demonstrated by the MIT team would be difficult to pull off in practice, because it involves repeatedly probing an AI system, which might raise suspicion.
+
+Dawn Song, a professor at UC Berkeley, specializes in AI and security and has used adversarial machine learning to, among other things, modify road signs so that they deceive computer vision systems. She says the MIT study is part of a growing body of work that shows how language algorithms can be fooled, and that all sorts of commercial systems may be vulnerable to some form of attack.
