@@ -64,7 +64,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Objectives:** -- Introduce basic syntax of Python programming language and its ecosystem;
 
 
-**Project(s):**  No Project
+**Project(s):**  A competition on Lint Code 
 
  
 
@@ -167,7 +167,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Topics:** Random Number Generation; GAN structure
 
 
-**Objectives:** 
+**Objectives:** Have a basic understanding of GAN and distrbution generation
  
 
 
