@@ -64,7 +64,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Objectives:** -- Introduce basic syntax of Python programming language and its ecosystem;
 
 
-**Project(s):**  No Project
+**Project(s):**  A competition on Lint Code 
 
  
 
@@ -135,26 +135,25 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Motivating Example(s)**: Text Generation (tweets, Shakespeare, Reviews, chat-up lines)
+**Motivating Example(s)**: Email completion, Language translator, Text Generation (tweets, Shakespeare, Reviews, chat-up lines)
 
  
 
-**Topics:** Text Representation; Recurrent Neural Networks
+**Topics:** Text Representation; Recurrent Neural Networks, Convolutional Neural Networks
 
- **Objectives:** 
+ **Objectives:** The main topics to be discussed in this part are:
+ * Brief introduction to the world of natural language processing (NLP) and show students some everyday applications of NLP.
+ * Help students develop simple NLP projects and how the projects are used in large scale.
+ * Motivate student by engage students to interact with AI.
+ * Two activities include writing essays using AI and build a chatbot. 
 
 
-**Project(s):** Chatbot (s)
+**Project(s):** Sentiment Classification, Language Generation, Chatbot (s)
 
  
 
-**Curriculum Threads:** Model, Optimization
-
+**Curriculum Threads:** Natural language processing, Deep learning models
  
-
-**Materials:**
-
-
  
 
 ## Random Numbers and GAN  (2 units)
@@ -168,7 +167,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Topics:** Random Number Generation; GAN structure
 
 
-**Objectives:** 
+**Objectives:** Have a basic understanding of GAN and distrbution generation
  
 
 
