@@ -1,15 +1,43 @@
-import os, sys 
+import os, sys
 import numpy as np
 import torch
+from torch.utils.data import Dataset
+from transformers import AutoModelWithLMHead, AutoTokenizer
+from nltk import word_tokenize
+import tqdm
+from pprint import pprint
 import copy
-from transformers import GPT2Tokenizer, GPT2LMHeadModel
-
 
 MAX_LENGTH = int(10000)
+
+class Textdataset(Dataset):
+    def __init__(self, texts, tokenizer, max_seq_len=512):
+        self.tokenizer = tokenizer
+        self.x = texts
+        self.max_seq_len = max_seq_len
+        self.special_token = '<|endoftext|>'
+
+    def __getitem__(self, index):
+        input = self.x[index]
+        max_seq_len = self.max_seq_len
+        input = input[:max_seq_len - 2]
+        input = [self.special_token] + input + [self.special_token]
+        input = input + [0] * (max_seq_len - len(input))
+        input_dict = self.tokenizer.encode_plus(input, add_special_tokens=True)
+        inputids = torch.tensor(input_dict['input_ids']).long()
+        attention_mask = torch.tensor(input_dict['attention_mask']).long()
+        token_type_ids = torch.tensor(input_dict['token_type_ids']).long()
+
+        return inputids, attention_mask, token_type_ids
+
+    def __len__(self):
+        return len(self.x)
+
+
 class Chatbot():
-    def __init__(self, temperature = 1.0, length = 50, k = 3, p = 0.6, repetition_penalty = 3.0):
-        self.model = GPT2LMHeadModel.from_pretrained('gpt2')
-        self.tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+    def __init__(self, dataset_path = None, temperature = 1.0, length = 50, k = 3, p = 0.6, repetition_penalty = 3.0, topics  = ['movie-dialogues']):
+        self.model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-medium")
+        self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.temperature = temperature
         self.length = length
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -21,9 +49,67 @@ class Chatbot():
         self.repetition_penalty = repetition_penalty
         self.k = k
         self.p = p
+        self.topics = topics
         paddin_text = ""
         seed = 42
+        self.train_max_seq_len = 512
         num_return_senquences = 1
+        self.dataset_path = dataset_path
+        pprint("Language Dialogue generator loaded successfully....")
+
+    def train_model(self, dataloader):
+        model = self.model
+        device  = self.device
+        optimizer = torch.optim.Adam(model.parameters(), lr=1e-6, eps=1e-08)
+        model.train()
+        total_len = len(dataloader)
+        data_iterator = tqdm.tqdm_notebook(dataloader, total = total_len)
+        for data in data_iterator:
+            inputs = {'input_ids': data[0].to(device), 'attention_mask': data[1].to(device),
+                      'token_type_ids': data[2].to(device)}
+            outputs = model(**inputs, labels=inputs['input_ids'])
+            loss = outputs[0]
+            loss.backward(retain_graph = True)
+            optimizer.step()
+            optimizer.zero_grad()
+            data_iterator.set_description("Loss {}".format(loss.item()))
+
+    def train(self, filename = None):
+        if filename is None:
+            print("Please provide a filename...")
+        else:
+            if self.dataset_path is None:
+                filepath = os.path.join(os.getcwd(), 'datasets', filename)
+            else:
+                filepath = os.path.join(self.dataset_path, filename)
+
+            if not os.path.exists(filepath):
+                print("FILENAME DOES NOT EXIST")
+                return
+
+            else:
+                with open(filepath, 'rb') as trainfile:
+                    textdata = trainfile.read()
+                    textdata = str(textdata).replace('\n', '')
+                    tokens = word_tokenize(textdata)
+                    max_seq_len = self.train_max_seq_len
+                    training_data_len = int(len(tokens)/max_seq_len)
+                    tokens_lst = [tokens[max_seq_len*i:max_seq_len*(i+1)] for i in range(training_data_len)]
+                    training_dataset = Textdataset(tokens_lst, tokenizer=self.tokenizer)
+                    train_data_loader = torch.utils.data.DataLoader(dataset=training_dataset, batch_size=2)
+                    self.train_model(train_data_loader)
+
+    def train_on_topics(self, topic = 'movie-dialogues'):
+        topic = topic.lower()
+        if topic not in self.topics:
+            print("The topic provided is not available")
+            print("Please select from the following topics")
+            pprint("Topics {}".format(self.topics))
+        else:
+            if topic == 'movie-dialogues':
+                self.train(filename='movie_lines.txt')
+            else:
+                print("The topic is not supported...")
 
     def ask_question(self):
         prompt_text = input("Start Chatting...... \n")
@@ -31,7 +117,7 @@ class Chatbot():
         return prompt_text
 
     def chat_with_bot(self):
-        prompt_text = input()
+        prompt_text = input("You >>> ")
         self.prompt_text = prompt_text
         return prompt_text
 
@@ -59,46 +145,27 @@ class Chatbot():
         model = model.to(device)
         tokenizer = self.tokenizer
         stop_token = self.stop_token
-        encoded_prompt = tokenizer.encode(prompt_text, add_special_tokens=False, return_tensors="pt")
-        encoded_prompt = encoded_prompt.to(device)
-
+        #encoded_prompt = tokenizer.encode(prompt_text, add_special_tokens=False, return_tensors="pt")
+        #encoded_prompt = encoded_prompt.to(device)
+        step = 0
         while True:
-            encoded_prompt = tokenizer.encode(prompt_text, add_special_tokens=False, return_tensors="pt")
+            encoded_prompt = tokenizer.encode(prompt_text + tokenizer.eos_token, return_tensors='pt')
             encoded_prompt = encoded_prompt.to(device)
+            bot_input_ids = torch.cat([chat_history_ids, encoded_prompt], dim=-1) if step > 0 else encoded_prompt
+            chat_history_ids = model.generate(
+                input_ids=bot_input_ids,
+                max_length=1000,
+                pad_token_id=tokenizer.eos_token_id)
 
-            output_sequences = model.generate(
-                input_ids=encoded_prompt,
-                max_length=length + len(encoded_prompt[0]),
-                temperature=self.temperature,
-                top_k=self.k,
-                top_p=self.p,
-                repetition_penalty=self.repetition_penalty,
-                do_sample=True,
-                num_return_sequences=1)
-
-
-              #print("::::YOURS OPTIONS ARE :::")
-              #for generated_sequence_idx, generated_sequence in enumerate(output_sequences):
-                  #print("=== GENERATED SEQUENCE {} ===".format(generated_sequence_idx + 1))
-            generated_sequence = output_sequences[0].tolist()
-
-                  # Decode text
-            text = tokenizer.decode(generated_sequence, clean_up_tokenization_spaces=True)
-
-            inv_text = text[::-1]
-            stop_token_index = len(text) - inv_text.find(stop_token)
-
-                  # Remove all text after the stop token
-            text = text[:stop_token_index if stop_token_index < len(text) else None]
-            reply = text[len(tokenizer.decode(encoded_prompt[0], clean_up_tokenization_spaces=True)) :]
+        # Decode text
+            reply = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
             
             self.bot_reply(reply)
-                  #print(generated_sequence_idx)
             prompt_text = self.chat_with_bot()
 
             new_text = copy.deepcopy(prompt_text)
             new_text = new_text.lower()
             if new_text.find('stop') != -1:
-                print("Stopping Chatbot....")
+                print("Bye..Have a nice day!!")
                 break
-
+            step += 1
