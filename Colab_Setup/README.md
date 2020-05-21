@@ -6,9 +6,9 @@ The first section walks you through setup, while the second provides some additi
 
 ## Getting Set Up for Camp
 
-1. Download the notebook in this directory, `Mounting_Drive_and_Cloning_Repository.ipynb`.
-2. Sign in to [https://colab.research.google.com/](https://colab.research.google.com/).  
-3. Choose "Upload", and select this notebook file.
+1. Sign in to [https://colab.research.google.com/](https://colab.research.google.com/).  
+2. Choose "GitHub" and enter URL: https://github.com/PDmitriy/dscamp_public
+3. Select 'Mounting_Drive_and_Cloning_Repository.ipynb' file and open in Colab.
 4. Run the cells in the notebook, following the directions.  This should mount your Google Drive, and clone the rest of this repository into your drive, making all the camp materials easily accessible.
 5. Log on to [https://drive.google.com](https://drive.google.com).  You should see a new folder called `dscamp`, and within that folder should be a copy of this repository.
 6. You can open any of the notebooks in the folder by Right Click -> Open With... -> Google Colabratory.  You may need to click "OK" to connect to Colab the first time.
