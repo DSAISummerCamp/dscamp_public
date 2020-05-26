@@ -5,8 +5,6 @@
 # There are minor differences in the model specification between logistic regression on statsmodels/sklearn
 # See package documentation for more details
 ##
-from google.colab import drive
-drive.mount('/content/gdrive')
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression as logit
