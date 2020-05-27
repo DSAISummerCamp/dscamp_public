@@ -15,15 +15,23 @@ In this project you will have a conversation with AI. This is similar to somethi
 
 
 ## Essay Writing:
+
 2. Load pre-trained gpt2.
+
 3. Fine tune on your chosen topic.
+
 4. Interact with AI and try to compose a well written essay. 
 
 ## Conversational AI
+
 5- Load pretrained DialoGPT
+
 6- Interact with your basic chat bot
+
 7- Fine tune with your chosen dataset
+
 8- Observe how the style has changed
+
 9- Evaluate your chatbot
 
 
