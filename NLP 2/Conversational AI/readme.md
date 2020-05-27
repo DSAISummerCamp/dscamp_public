@@ -3,7 +3,7 @@ Natural Language Generation
 
 
 ## Chatbot
-In this project you will have a conversation with AI. This is similar to something you might have seen in many websites. The AI model is a machine learning model that generates english language given some initial sentences. We are going to use the free GPU environment provided by Google in the form of [google colabratory](colab.research.google.com).
+In this project you will have a conversation with AI. This is similar to something you might have seen in many websites. The AI model is a response generation model trained on 147 MB multi turn dialogue from Reddit discussion thread. We are going to use the free GPU environment provided by Google in the form of [google colabratory](colab.research.google.com).
 
 ### Objective
 
