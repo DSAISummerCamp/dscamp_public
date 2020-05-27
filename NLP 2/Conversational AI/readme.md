@@ -9,12 +9,12 @@ In this project you will have a conversation with AI. This is similar to somethi
 
 
 
-### Activities
+# Activities
 
 1. Learning about NLG and transfer learning.
 
 
-##Essay Writing:
+## Essay Writing:
 2. Load pre-trained gpt2.
 3. Fine tune on your chosen topic.
 4. Interact with AI and try to compose a well written essay. 
