@@ -9,5 +9,5 @@ The aim of the project is to introduce students with the latest technoligies in 
 ### Activities
 
 1. Select a topic from the available list of topics or choose your any topic.
-2. Train the AI model using the data from text.
+2. Fine-tune the AI model using the data from text.
 3. Run the model and use help from AI to complete a meaning essay on the topic.
