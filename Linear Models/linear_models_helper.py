@@ -12,5 +12,5 @@ from sklearn.preprocessing import LabelEncoder as encoder
 from sklearn.metrics import accuracy_score
 import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
-data = pd.read_csv('./face_data_inf.csv')
+data = pd.read_csv('/content/gdrive/My Drive/dscamp/dscamp_public/Linear Models/face_data_inf.csv')
 RANDOM_SEED = 123
