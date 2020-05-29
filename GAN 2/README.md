@@ -1,12 +1,12 @@
-# Project: Python Programming
+# Project: GAN 2
 
-Step 1 (30 mins): open the "python topics summary.docx" with students and give a overview about the topics they are going to learn. Help the students to have a leetcode free account for the  practice problems. 
+Step 1 (45 mins): open the "GAN for summer camp.pptx" and go over the PPT with students. 
 
-Step 2 (45 mins): open the "Python Class 1.ipynb" by google colab. Go over the codes and topics with students. Ask students to solve the selected problems from leetcode. 
+Step 2 (25 mins): open the "example 1.ipynb" by google colab. Go over the codes and ask the students to run the codes end-to-end. 
 
-Step 3 (45 mins): open the "Python Class 2.ipynb" by google colab. Go over the codes and topics with students. Ask students to solve the selected problems from leetcode. 
+Step 3 (45 mins): share the "GAN_example 2 (for students).ipynb" , and ask the students to fill the gaps in the codes and run the codes. Share the correct code "GAN_example 2 (for instructor).ipynb" with students and pre-trained weights with students, and ask them to have a end-to-end run. 
 
-Step 4 (30 mins): final project-a competition on leetcode for the leap year problem. After the competioin, share "leap year solution.ipynb" with students.
+Step 4 (25 mins): share the youtube vedios on page 28 of "GAN for summer camp.pptx". And discuss with students what happens when our computers get smarter than we are?
 
 
 
