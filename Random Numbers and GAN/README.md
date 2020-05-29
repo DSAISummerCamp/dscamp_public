@@ -1,9 +1,8 @@
 # Project: Random Numbers and GAN
 
-Step 1 (30 mins): open the "python topics summary.docx" with students and give a overview about the topics they are going to learn. Help the students to have a leetcode free account for the  practice problems. 
+Step 1 (80 mins): open the "RandomNumber.pptx" with students. Go over the PPT with students. At the same time, open the code in "Random numbers.ipynb" in google colab with students and introduce how to generate different distributions in python by examples.  
 
-Step 2 (45 mins): open the "Python Class 1.ipynb" by google colab. Go over the codes and topics with students. Ask students to solve the selected problems from leetcode. 
+Step 2 (45 mins): open "style_transfer.ipynb" in google colab, and go over the code for style transfer. Ask the students to generate their own pictures using the provided code.  
 
-Step 3 (45 mins): open the "Python Class 2.ipynb" by google colab. Go over the codes and topics with students. Ask students to solve the selected problems from leetcode. 
+Step 3 (20 mins): Share the youtube vedios on the page 16 in "RandomNumber.pptx" to give the student an overview about the image generation.
 
-Step 4 (30 mins): final project-a competition on leetcode for the leap year problem. After the competioin, share "leap year solution.ipynb" with students.
