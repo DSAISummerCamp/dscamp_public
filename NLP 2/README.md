@@ -12,9 +12,7 @@ As most deep learning models require huge amount of data to train well and that 
 2. The pretrained model is adapted on your small dataset (fine-tuning).
 
 ## Activities planned
-* Create powerful NLP based Deep Learning Models with PyTorch.
-* Create simple applications using deep learning models. 
-* Write essays with the help of AI.
-* Fine tune stylized chat bots with AI.
-* Interact with AI 
-* Have FUN !!!
+1. Presenting NLP2.pptx : 50 minutes
+2. Essay writing Jupyter notebook interactive workshop : 50 minutes
+3. Chatbot Jupyter notebook interactive workshop: 50 minutes
+
