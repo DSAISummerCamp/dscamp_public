@@ -60,6 +60,7 @@ class GenerateSentence():
     def train_model(self, dataloader):
         model = self.model
         device  = self.device
+        model.to(device)
         optimizer = torch.optim.Adam(model.parameters(), lr=1e-6, eps=1e-08)
         model.train()
         total_len = len(dataloader)
@@ -187,13 +188,13 @@ class GenerateSentence():
 
                 text_option = text[len(tokenizer.decode(encoded_prompt[0], clean_up_tokenization_spaces=True)) :]
                   #print(generated_sequence_idx)
-                print(choices[generated_sequence_idx] + ". --> {}".format(text_option))
+                print(choices[generated_sequence_idx] + ". --> "+text_option)
                 print()
 
             print(choices[generated_sequence_idx + 1] + ". --> {}".format("Write your own sentences"))
             print(choices[generated_sequence_idx + 2] + ". --> {}".format("STOP ESSAY WRITING"))
 
-            print(generated_seq_dir)
+            #print(generated_seq_dir)
             userchoice = self.choose_option()
             userchoice = userchoice.lower()
             while True:
