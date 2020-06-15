@@ -8,7 +8,7 @@ import tqdm
 from pprint import pprint
 import copy
 
-MAX_LENGTH = int(10000)
+MAX_LENGTH = int(128)
 
 class Textdataset(Dataset):
     def __init__(self, texts, tokenizer, max_seq_len=512):
@@ -35,14 +35,18 @@ class Textdataset(Dataset):
 
 
 class Chatbot():
-    def __init__(self, dataset_path = None, temperature = 1.0, length = 50, k = 3, p = 0.6, repetition_penalty = 3.0, topics  = ['movie-dialogues']):
-        self.model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-medium")
-        self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
+    def __init__(self, dataset_path = None, temperature = 1.1, length = 50, k = 3, p = 0.6, repetition_penalty = 10.0, size='small', topics  = ['movie-animation','movie-horror', 'movie-action', 'movie-scifi']):
+        if size=='small':
+            self.model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-small")
+            self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+        elif size=='medium':
+            self.model = AutoModelWithLMHead.from_pretrained("microsoft/DialoGPT-medium")
+            self.tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
         self.temperature = temperature
         self.length = length
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.n_gpu = torch.cuda.device_count()
-        self.MAX_LENGTH = int(10000)
+        self.MAX_LENGTH = int(1000)
 
         prompt = " "
         self.stop_token = '.'
@@ -60,7 +64,8 @@ class Chatbot():
     def train_model(self, dataloader):
         model = self.model
         device  = self.device
-        optimizer = torch.optim.Adam(model.parameters(), lr=1e-6, eps=1e-08)
+        model.to(device)
+        optimizer = torch.optim.Adam(model.parameters(), lr=1e-7, eps=1e-08)
         model.train()
         total_len = len(dataloader)
         data_iterator = tqdm.tqdm_notebook(dataloader, total = total_len)
@@ -96,18 +101,24 @@ class Chatbot():
                     training_data_len = int(len(tokens)/max_seq_len)
                     tokens_lst = [tokens[max_seq_len*i:max_seq_len*(i+1)] for i in range(training_data_len)]
                     training_dataset = Textdataset(tokens_lst, tokenizer=self.tokenizer)
-                    train_data_loader = torch.utils.data.DataLoader(dataset=training_dataset, batch_size=2)
+                    train_data_loader = torch.utils.data.DataLoader(dataset=training_dataset, batch_size=1)
                     self.train_model(train_data_loader)
 
-    def train_on_topics(self, topic = 'movie-dialogues'):
+    def train_on_topics(self, topic = 'movie-animation'):
         topic = topic.lower()
         if topic not in self.topics:
             print("The topic provided is not available")
             print("Please select from the following topics")
             pprint("Topics {}".format(self.topics))
         else:
-            if topic == 'movie-dialogues':
-                self.train(filename='movie_lines.txt')
+            if topic == 'movie-animation':
+                self.train(filename='animlines.txt')
+            elif topic == 'movie-scifi':
+                self.train(filename='scifilines.txt')
+            elif topic == 'movie-horror':
+                self.train(filename='horrorlines.txt')
+            elif topic == 'movie-action':
+                self.train(filename='actionlines.txt')
             else:
                 print("The topic is not supported...")
 
@@ -154,12 +165,12 @@ class Chatbot():
             bot_input_ids = torch.cat([chat_history_ids, encoded_prompt], dim=-1) if step > 0 else encoded_prompt
             chat_history_ids = model.generate(
                 input_ids=bot_input_ids,
-                max_length=1000,
+                max_length=128,
                 pad_token_id=tokenizer.eos_token_id)
 
         # Decode text
             reply = tokenizer.decode(chat_history_ids[:, bot_input_ids.shape[-1]:][0], skip_special_tokens=True)
-            
+            reply=reply.replace('intercourse','fight')
             self.bot_reply(reply)
             prompt_text = self.chat_with_bot()
 
