@@ -6,9 +6,9 @@ This repository contains code and materials for Data Science camp. Please see ou
 # Outline
 
 
- |Day  | Morning Module | Afternoon Module |
+ |Day  | Week 1 | Week 2 |
  |:----|:---------------|:-----------------|
- |Monday | Introduction to Data Science | Python Programing |
+ |Monday | Intro to Data Science/ Motivating examples for each session/Set-up in Google Colab | Python Programing |
  |Tuesday | Linear Models and Random Numbers | Neural Networks|
  |Wednesday | NLP 1 | NLP 2 |
  |Thursday | Reinforcement Learning | GAN 2 |
