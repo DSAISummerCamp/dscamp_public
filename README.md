@@ -9,9 +9,9 @@ This repository contains code and materials for Data Science camp. Please see ou
  |Day  | Morning Module | Afternoon Module |
  |:----|:---------------|:-----------------|
  |Monday | Introduction to Data Science | Python Programing |
- |Tuesday | Linear Models | Neural Networks|
+ |Tuesday | Linear Models and Random Numbers | Neural Networks|
  |Wednesday | NLP 1 | NLP 2 |
- |Thursday | Random Numbers and GAN  | GAN 2 |
+ |Thursday | Reinforcement Learning | GAN 2 |
  |Friday | Project: AI Startup | Presentations; Wrap Up |
 
 
@@ -75,7 +75,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Materials:** Pet examples from Lint Code
  
 
-## Linear Models (1 unit)
+## Linear Models and Random Numbers (1 unit)
 
  
 
@@ -83,10 +83,10 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Topics:** Conceptual introduction of models (linear and logistic regression)
+**Topics:** Conceptual introduction of models (linear and logistic regression), random numbers (distributions)
 
 
-**Objectives:** Introduce concepts of linear statistical modelling
+**Objectives:** Introduce concepts of linear statistical modelling and random numbers
  
 
 
@@ -98,7 +98,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Materials:** Linear and Logistic Regression materials
+**Materials:** Linear and Logistic Regression materials, Random Numbers materials
 
  
 
@@ -154,9 +154,30 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
 **Curriculum Threads:** Natural language processing, Deep learning models
  
+
+## Reinforcement Learning  (1 unit)
+
  
 
-## Random Numbers and GAN  (2 units)
+**Motivating Example(s)**: Mar I/O (RL agent playing Super Mario)
+
+ 
+
+**Topics:** Reinforcement Learning and dynamic programming
+
+
+**Objectives:** Gentle introduction to reinforcement learning concepts
+ 
+
+
+**Project(s):** Procgen
+
+ 
+
+**Curriculum Threads:** RL; Q-learning; Markov Chains
+
+
+## GAN  (1 unit)
 
  
 
@@ -164,7 +185,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Topics:** Random Number Generation; GAN structure
+**Topics:** GAN structure
 
 
 **Objectives:** Have a basic understanding of GAN and distrbution generation
