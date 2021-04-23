@@ -1,7 +1,18 @@
-# Project: Random Numbers and GAN
+# Project: Object Recognition by Neural Network models
 
-Step 1 (80 mins): open the "RandomNumber.pptx" with students. Go over the PPT with students. At the same time, open the code in "Random numbers.ipynb" in google colab with students and introduce how to generate different distributions in python by examples.  
+## Introduction
+Team Task:  build a Neural Network (NN) model to recognize objects in images
 
-Step 2 (45 mins): open "style_transfer.ipynb" in google colab, and go over the code for style transfer. Ask the students to generate their own pictures using the provided code.  
 
-Step 3 (20 mins): Share the youtube vedios on the page 16 in "RandomNumber.pptx" to give the student an overview about the image generation.
+## Training Data
+
+The CIFAR-10 dataset consists of 60000 32x32x3 color images in 10 equal classes, (6000 images per class). Each class of images corresponds to a physical object (automobile, cat, dog, airplane, etc). Dataset website: https://www.cs.toronto.edu/~kriz/cifar.html
+
+## Key Task
+
+Bacis structure of the NN model is provided. Students need to try different model parameters and settings in order to have the best model performance in accuracy on testing data set.
+
+
+## Assessment of performance
+
+The accuracy on testing data set
