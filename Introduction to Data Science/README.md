@@ -1,6 +1,6 @@
 # Journey at Wells Fargo Data Science Camp
 
-Step 1 (60 mins): Go over Journey at Data Camp.pptx, show all the motivating exampls. Give students time and opportunities to share their ideas about data science and AI
+Step 1 (60 mins): Go over "Journey at Data Camp.pptx", show all the motivating exampls. Give students time and opportunities to share their ideas about data science and AI
 
 Step 2 (60 mins): Demo: steps to mount github and google drive, usage of google colab from google drive
 
