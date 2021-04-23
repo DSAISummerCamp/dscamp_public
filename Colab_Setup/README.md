@@ -6,6 +6,7 @@ The first section walks you through setup, while the second provides some additi
 
 ## Getting Set Up for Camp
 
+0. log out all of your google accounts and login to one personal google account for this camp
 1. Download Mounting_Drive_and_Cloning_Repository.ipynb.
 2. Save it in your google drive. 
 3. Select 'Mounting_Drive_and_Cloning_Repository.ipynb' file in google drive and open in Colab.
