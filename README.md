@@ -6,13 +6,13 @@ This repository contains code and materials for Data Science camp. Please see ou
 # Outline
 
 
- |Day  | Morning Module | Afternoon Module |
+ |Day  | Week 1 | Week 2 |
  |:----|:---------------|:-----------------|
- |Monday | Introduction to Data Science | Python Programing |
- |Tuesday | Linear Models and Random Numbers | Neural Networks|
- |Wednesday | NLP 1 | NLP 2 |
- |Thursday | Reinforcement Learning | GAN 2 |
- |Friday | Project: AI Startup | Presentations; Wrap Up |
+ |Monday | Intro to Data Science/ Motivating examples for each session/Set-up in Google Colab | 2nd NLP session and Transformer |
+ |Tuesday | Python Programming/Q&A for Google Colab Set-up | Reinforcement learning (RL)|
+ |Wednesday | Intro to Models (Linear Models, Random Numbers and Distributions) | GAN – Image Manipulation |
+ |Thursday | Neural Networks | Preparation to AI Startup Team Project and Team Neural Network Task |
+ |Friday | Intro to AI Startup Team Project/Neural Network Team Task/Intro to NLP (1st session) | Presentations of AI Startup and Team NN Task; Wrap-up |
 
 
 

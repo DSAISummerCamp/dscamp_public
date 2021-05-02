@@ -14,7 +14,7 @@ This module covers topics of dynamic programming and reinforcement learning. The
 
 * Cartpole example.
 
-# Outline (part 1)
+# Outline (part 2)
 
 * Challenges of RL
 
