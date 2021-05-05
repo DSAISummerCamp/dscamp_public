@@ -34,4 +34,12 @@ Students will attempt to train RL agent using procedural generation (Procgen) en
 
 * RL part 2 slides
 
+* Jupyter Notebook with Markov Chains example
+
+* Jupyter Notebook with MultiArmed Bandit example
+
+* Jupyter Notebook with GridWorld example
+
+* Jupyter Notebook with CartPole example
+
 * Jupyter Notebook with Procgen example
