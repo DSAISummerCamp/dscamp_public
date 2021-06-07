@@ -3,7 +3,7 @@
 ## Learning Step
 1.Go over the "Team project for NN.pptx" (45 mins)
 
-2.GO over the example in "ImageRecog NN Model template for instructors.ipynb" (20 mins)
+2.Go over the example in "ImageRecog NN Model template for instructors.ipynb" (20 mins)
 
 3.Share the code template (ImageRecog NN Model template for students.ipynb) and the presentation template (NN team project presentation template for students.pptx) (20 mins)
 
