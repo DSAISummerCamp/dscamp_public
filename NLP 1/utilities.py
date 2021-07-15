@@ -61,9 +61,9 @@ def draw_label2d(p, label, coords=False, ax=None, fontsize=14,
 
 
 ###### Code for the CNN model using Keras ##############
-import keras
+import keras, tensorflow.keras
 from keras.preprocessing.text import Tokenizer
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Activation, Conv2D, Input, Embedding, Reshape, MaxPool2D, Concatenate, Flatten, Dropout, Dense, Conv1D
 from keras.layers import MaxPool1D
