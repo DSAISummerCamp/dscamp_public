@@ -1,5 +1,11 @@
 # Project: Object Recognition by Neural Network models
 
+## How to train your Neural Network:
+
+1. Read about weight initialization in "pt1_Weight_Initialization.ipynb".
+2. Read about neural network optimizers in "pt2_Optimizers.ipynb".
+3. See the neural network in action in "pt3_Neural_Network_Example_CIFAR-10.ipynb"
+
 ## Learning Step
 1.Go over the "Team project for NN.pptx" (45 mins)
 
