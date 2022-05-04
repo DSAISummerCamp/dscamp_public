@@ -1,8 +1,10 @@
 # 2022 Camps please use:
 Linear Models 2022.pptx
+
 RandomNumber 2022.pptx
 
 Linear_models_2022.ipynb
+
 random_numbers_2022.ipynb
 
 
