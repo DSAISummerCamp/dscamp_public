@@ -1,3 +1,11 @@
+# 2022 Camps please use:
+Linear Models 2022.pptx
+RandomNumber 2022.pptx
+
+Linear_models_2022.ipynb
+random_numbers_2022.ipynb
+
+
 # Linear Models
 
 This module introduces the concept of random numbers, regression and linear modelling of statistical data. The materials contain theory on linear/logistic/generalized regression and sklearn examples using Python programming language. The project of the module uses data obtained from [thisnetworkdoesnotexist](thisnetworkdoesnotexist.pythonanywhere.com).
