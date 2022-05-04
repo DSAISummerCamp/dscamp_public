@@ -5,7 +5,8 @@
 0. The training data is collected by student using data_prep.ipynb
 1. Read about weight initialization in "pt1_Weight_Initialization.ipynb".
 2. Read about neural network optimizers in "pt2_Optimizers.ipynb".
-3. See the neural network in an example at "pt3_Neural_Network_Example_CIFAR-10.ipynb"
+3. Example at "pt3_Neural_Network_Example_CIFAR-10.ipynb"
+4. Example at "pt4_optimizer_example.ipynb"
 
 ## Templates
 1. Jupyter Notebook Template: 2022_project_template.ipynb
