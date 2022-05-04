@@ -6,13 +6,10 @@
 2. Read about neural network optimizers in "pt2_Optimizers.ipynb".
 3. See the neural network in action in "pt3_Neural_Network_Example_CIFAR-10.ipynb"
 
-## Learning Step
-1.Go over the "Team project for NN.pptx" (45 mins)
+## Template
+1. Jupyter Notebook Template: 2022_project_template.ipynb
 
-2.Go over the example in "ImageRecog NN Model template for instructors.ipynb" (20 mins)
-
-3.Share the code template (ImageRecog NN Model template for students.ipynb) and the presentation template (NN team project presentation template for students.pptx) (20 mins)
-
+2. Presentation Template:
 
 ## Introduction of Project
 Team Task:  build a Neural Network (NN) model to recognize objects in images
