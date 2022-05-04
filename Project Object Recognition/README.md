@@ -20,6 +20,12 @@ Team Task:  build a Neural Network (NN) model to recognize objects in images
 
 ## Training Data
 
+2022 Camp:
+
+The training data is collected by student using data_prep.ipynb
+
+2021 Camp:
+
 The CIFAR-10 dataset consists of 60000 32x32x3 color images in 10 equal classes, (6000 images per class). Each class of images corresponds to a physical object (automobile, cat, dog, airplane, etc). Dataset website: https://www.cs.toronto.edu/~kriz/cifar.html
 
 ## Key Task
@@ -30,3 +36,5 @@ Bacis structure of the NN model is provided (ImageRecog NN Model template for st
 ## Assessment of performance
 
 The accuracy on testing data set
+
+
