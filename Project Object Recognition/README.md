@@ -2,16 +2,24 @@
 
 ## How to train your Neural Network:
 
+0. The training data is collected by student using data_prep.ipynb
 1. Read about weight initialization in "pt1_Weight_Initialization.ipynb".
 2. Read about neural network optimizers in "pt2_Optimizers.ipynb".
-3. See the neural network in action in "pt3_Neural_Network_Example_CIFAR-10.ipynb"
+3. See the neural network in an example at "pt3_Neural_Network_Example_CIFAR-10.ipynb"
 
-## Template
+## Templates
 1. Jupyter Notebook Template: 2022_project_template.ipynb
 
-2. Presentation Template:
+2. Presentation Template: NN team project presentation template for students.pptx
 
 ## Introduction of Project
+
+2022 Camps:
+Team Task:  build a Neural Network (NN) model to recognize paper, rock and Scissors in images
+
+
+2021 Camps:
+
 Team Task:  build a Neural Network (NN) model to recognize objects in images
 
 
@@ -32,6 +40,6 @@ Bacis structure of the NN model is provided (ImageRecog NN Model template for st
 
 ## Assessment of performance
 
-The accuracy on testing data set
+The accuracy on the provided testing data set
 
 
