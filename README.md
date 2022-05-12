@@ -6,13 +6,13 @@ This repository contains code and materials for Data Science camp. Please see ou
 # Outline
 
 
- |Day  | Week 1 | Week 2 |
+ |Day  | Morning Module | Afternoon Module |
  |:----|:---------------|:-----------------|
- |Monday | Intro to Data Science/ Motivating examples for each session/Set-up in Google Colab | 2nd NLP session and Transformer |
- |Tuesday | Python Programming/Q&A for Google Colab Set-up | Reinforcement learning (RL)|
- |Wednesday | Intro to Models (Linear Models, Random Numbers and Distributions) | GAN – Image Manipulation |
- |Thursday | Neural Networks | Preparation to AI Startup Team Project and Team Neural Network Task |
- |Friday | Intro to AI Startup Team Project/Neural Network Team Task/Intro to NLP (1st session) | Presentations of AI Startup and Team NN Task; Wrap-up |
+ |Monday | Intro to Data Science/ Motivating examples for each session/Set-up in Google Colab | Python Programming/Q&A for Google Colab Set-up |
+ |Tuesday | Intro to Models (Linear Models, Random Numbers and Distributions) | Advanced Modeling I (Neural Networks) |
+ |Wednesday | Advanced Modeling II (Convolutional Neural Networks, Tree-based Models)  | Object Detection: introduction and data collection |
+ |Thursday | Object Detection: model initialization and structure design | Object Detection: parameter tuning and optimization |
+ |Friday | Object Detection: preparation and final presentation |
 
 
 
@@ -102,7 +102,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-## Artificial Neural Networks and Image Recognition (1 unit)
+## Advanced Modeling I (1 unit)
 
  
 
@@ -110,7 +110,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Topics:** Biological and Artificial Neural Networks, Splines and Nonlinear Regression, Artificial Neural Network Structure(s); Convolutional Networks
+**Topics:** Biological and Artificial Neural Networks, Splines and Nonlinear Regression, Artificial Neural Network Structure(s)
 
 
 **Objectives:** At the conclusion of the unit, students will be able to 
@@ -118,7 +118,7 @@ Each of the modules is designed to be a self-contained units, with themes that a
 * Describe the relationships between artificial neurons and biological neurons
 * Build simple neural networks using TensorFlow
 * Build a neural network to classify images using TensorFlow
-* Use a Neural Network model to build an object detector.
+
  
 
 
@@ -129,75 +129,25 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Curriculum Threads:**  Modeling (Biological model vs Mathematical), Optimization (Gradient Descent)
 
 
-
-
-## Natural Language Processing (2 units)
+## Advanced Modeling II (1 unit)
 
  
 
-**Motivating Example(s)**: Email completion, Language translator, Text Generation (tweets, Shakespeare, Reviews, chat-up lines)
+**Motivating Example(s)**: Photo Classification on the Social Network
 
  
 
-**Topics:** Text Representation; Recurrent Neural Networks, Convolutional Neural Networks
-
- **Objectives:** The main topics to be discussed in this part are:
- * Brief introduction to the world of natural language processing (NLP) and show students some everyday applications of NLP.
- * Help students develop simple NLP projects and how the projects are used in large scale.
- * Motivate student by engage students to interact with AI.
- * Two activities include writing essays using AI and build a chatbot. 
+**Topics:** Convolutional Networks, Trees, Ensembles
 
 
-**Project(s):** Sentiment Classification, Language Generation, Chatbot (s)
+**Objectives:** At the conclusion of the unit, students will be able to 
 
- 
-
-**Curriculum Threads:** Natural language processing, Deep learning models
- 
-
-## Reinforcement Learning  (1 unit)
-
- 
-
-**Motivating Example(s)**: Mar I/O (RL agent playing Super Mario)
-
- 
-
-**Topics:** Reinforcement Learning and dynamic programming
+* Use a Neural Network model to build an object detector.
+* Learn tree-based Models
+* Introduction to ensemble method and model averaging 
 
 
-**Objectives:** Gentle introduction to reinforcement learning concepts
- 
-
-
-**Project(s):** Procgen
-
- 
-
-**Curriculum Threads:** RL; Q-learning; Markov Chains
-
-
-## GAN  (1 unit)
-
- 
-
-**Motivating Example(s)**: Handwriting Recognition
-
- 
-
-**Topics:** GAN structure
-
-
-**Objectives:** Have a basic understanding of GAN and distrbution generation
- 
-
-
-**Project(s):**  Generate Anime Faces
-
- 
-
-**Curriculum Threads:** Models; Optimization
-
+**Project(s):** Object Detector
  
 
 ## Project: AI Startup (1 unit)
