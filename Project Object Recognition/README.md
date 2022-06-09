@@ -6,7 +6,7 @@ Read the Tutorials Folder:
 1. Read about weight initialization in "1 Model Initialization/ pt1_Weight_Initialization.ipynb".
 2. Read about neural network optimizers in "2 Model Optimization/ pt2_Optimizers.ipynb".
 3. Example at "3 Examples/ pt3_Neural_Network_Example_CIFAR-10.ipynb"
-4. Example at "4 Examples/ pt4_optimizer_example.ipynb"
+4. Example at "3 Examples/ pt4_optimizer_example.ipynb"
 
 
 ## Templates
