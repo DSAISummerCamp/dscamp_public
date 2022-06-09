@@ -8,9 +8,9 @@ The first section walks you through setup, while the second provides some additi
 
 
 0. log out all of your google accounts and login to one personal google account for this camp
-1. Download Mounting_Drive_and_Cloning_Repository.ipynb.
-2. Save it in your google drive. 
-3. Select 'Mounting_Drive_and_Cloning_Repository.ipynb' file in google drive and open in Colab.
+1. Open google colab at https://colab.research.google.com/
+2. Choose open by Github and copy 'https://github.com/DSAISummerCamp/dscamp_public' to the URL search cell
+3. Select 'Mounting_Drive_and_Cloning_Repository.ipynb' from the search window and open in Colab.
 4. Run the cells in the notebook, following the directions.  This should mount your Google Drive, and clone the rest of this repository into your drive, making all the camp materials easily accessible.
 5. Log on to [https://drive.google.com](https://drive.google.com).  You should see a new folder called `dscamp`, and within that folder should be a copy of this repository.
 6. You can open any of the notebooks in the folder by Right Click -> Open With... -> Google Colabratory.  You may need to click "OK" to connect to Colab the first time.
