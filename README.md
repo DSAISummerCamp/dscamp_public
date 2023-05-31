@@ -9,7 +9,7 @@ This repository contains code and materials for Data Science camp. Please see ou
  |Day  | Morning Module | Afternoon Module |
  |:----|:---------------|:-----------------|
  |Monday | Intro to Data Science/ Motivating examples for each session/Set-up in Google Colab | Python Programming/Q&A for Google Colab Set-up |
- |Tuesday | Intro to Models (Linear Models, Random Numbers and Distributions) | Advanced Modeling I (Neural Networks) |
+ |Tuesday | TBD | Advanced Modeling I (Linear Models, Neural Networks) |
  |Wednesday | Advanced Modeling II (Convolutional Neural Networks, Tree-based Models)  | Object Detection: introduction and data collection |
  |Thursday | Object Detection: model initialization and structure design | Object Detection: parameter tuning and optimization |
  |Friday | Object Detection: preparation and final presentation |
@@ -75,33 +75,6 @@ Each of the modules is designed to be a self-contained units, with themes that a
 **Materials:** Pet examples from Lint Code
  
 
-## Linear Models and Random Numbers (1 unit)
-
- 
-
-**Motivating Example(s)**: Scientific papers that use regressions in its analysis
-
- 
-
-**Topics:** Conceptual introduction of models (linear and logistic regression), random numbers (distributions)
-
-
-**Objectives:** Introduce concepts of linear statistical modelling and random numbers
- 
-
-
-**Project(s):** Social network model of credit decisioning using logistic regression
-
- 
-
-**Curriculum Threads:** It starts with drawing a line through the data points you have
-
- 
-
-**Materials:** Linear and Logistic Regression materials, Random Numbers materials
-
- 
-
 ## Advanced Modeling I (1 unit)
 
  
@@ -110,11 +83,12 @@ Each of the modules is designed to be a self-contained units, with themes that a
 
  
 
-**Topics:** Biological and Artificial Neural Networks, Splines and Nonlinear Regression, Artificial Neural Network Structure(s)
+**Topics:** Intro to Linear Models and Motivation, Biological and Artificial Neural Networks, Splines and Nonlinear Regression, Artificial Neural Network Structure(s)
 
 
 **Objectives:** At the conclusion of the unit, students will be able to 
 
+* Conceptualize simple linear models
 * Describe the relationships between artificial neurons and biological neurons
 * Build simple neural networks using TensorFlow
 * Build a neural network to classify images using TensorFlow
