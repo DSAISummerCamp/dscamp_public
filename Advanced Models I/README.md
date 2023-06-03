@@ -1,8 +1,10 @@
-# Introduction to Neural Networks
+# Introduction to Linear Models and Neural Networks
 
-This module introduces the basic concepts of artificial neural networks and the powerful software used to train them.  The material contains conceptual and simple mathematical foundations for neural networks, and examples and investigations using TensorFlow/Keras in the Python programming language.
+This module introduces the basic concepts of modeling through linear  models and advances to artificial neural networks. The material contains conceptual and simple mathematical foundations for linear and logistic regression and neural networks, and examples and investigations using TensorFlow/Keras in the Python programming language.
 
 # Outline
+
+* Brief introduction to linear models - linear and logistic regression. Motivates modeling though simple examples as a prelude to advanced modeling using neural networks
 
 * Introduction artificial neural networks. Describes the historical, intuitive relationship between artificial neurons and neural networks with their biological counterparts.
 
@@ -15,8 +17,10 @@ This module introduces the basic concepts of artificial neural networks and the 
 
 # Contents
 
-* Slides: Two decks 1-IntroNeuralNets.pptx provides an overview of neural networks
+* Slides: Advanced Models 1 2023.pptx has material on linear models and overview of neural networks
 
 * Student Notebooks: NeuralNetworkIntroduction (Feed Forward Nets)
+
+* Supplementary Notebooks: LinearModelPlots.ipynb contains illustrative examples used in the slides on linear models.
 
 * Data Folder, containing data used by the notebooks.
