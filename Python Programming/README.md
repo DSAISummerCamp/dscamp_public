@@ -14,6 +14,9 @@ Step 1 (90 mins): open the "Python Class 2.ipynb" by google colab. Go over the c
 
 Step 2 (45 mins): final project for class 2
 
+Step 3 (15-30 mins or as time allows): TicTacToe sub module to demonstrate a simple game of tictactoe using Python. Open "TicTacToe/TicTacToe.ipynb" through google colab. Go over the exercises 1-5 (6 and 7 optional). Gameplay using gui is provided in Exercise 6.
+
+
 
 
 
