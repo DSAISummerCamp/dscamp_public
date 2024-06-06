@@ -10,7 +10,7 @@ Read the Tutorials Folder:
 
 
 ## Templates
-In the Folder 2022 Camp Rock Paper Scissors:
+In the Folder 2024 Camp Rock Paper Scissors:
 1. Jupyter Notebook Template: 2022_project_template.ipynb
 
 2. Presentation Template: NN team project presentation template for students.pptx
