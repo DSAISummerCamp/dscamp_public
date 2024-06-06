@@ -17,7 +17,7 @@ In the Folder 2022 Camp Rock Paper Scissors:
 
 ## Introduction of Project
 
-2022 Camps:
+2022-2024 Camps:
 
 Team Task:  build a Neural Network (NN) model to recognize paper, rock and Scissors in images. 
 
@@ -29,8 +29,8 @@ Team Task:  build a Neural Network (NN) model to recognize objects in images
 
 ## Training Data
 
-2022 Camp:
-See the folder 2022 Camp Rock Paper Scissors.
+2022-2024 Camp:
+See the folder 2024 Camp Rock Paper Scissors.
 
 The training data is collected by student using Data Collection/data_prep.ipynb. Examples are given in rps.zip.
 
