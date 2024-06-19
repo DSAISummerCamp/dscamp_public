@@ -1,5 +1,5 @@
 from keras.models import Sequential
-from keras.layers.core import Dense, Dropout
+from keras.layers import Dense, Dropout, Flatten
 from keras.callbacks import Callback
 from matplotlib import pyplot as plt
 import numpy as np
