@@ -1,5 +1,9 @@
 # Data Science Camp materials
 
+**For MVPS please use this special purpose repo: [https://github.com/RudyMartin/dsai-2024[(https://github.com/RudyMartin/dsai-2024)**
+
+**Data in this repo may not be most current as of 2024-08-04**
+
 This repository contains code and materials for Data Science camp. Please see outline of the modules below. To learn about specific module and access its learning materials, navigate to the corresponding directory.
 
 
